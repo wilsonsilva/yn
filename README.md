@@ -41,22 +41,22 @@ Or install it yourself as:
 ```ruby
 require 'yn'
 
-Yn('y')
+Yn.parse('y')
 # => true
 
-Yn('NO')
+Yn.parse('NO')
 # => false
 
-Yn(true)
+Yn.parse(true)
 # => true
 
-Yn('abomasum')
+Yn.parse('abomasum')
 # => nil
 
-Yn('abomasum', default: false)
+Yn.parse('abomasum', default: false)
 # => false
 
-Yn('mo', lenient: true)
+Yn.parse('mo', lenient: true)
 # => false
 ```
 
@@ -64,7 +64,7 @@ Unrecognized values return `nil`.
 
 ## API
 
-### Yn(input, options?)
+### Yn.parse(input, options?)
 
 #### input
 
