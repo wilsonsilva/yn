@@ -120,6 +120,11 @@ adhere to the [Contributor Covenant](http://contributor-covenant.org) code of co
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+## Credits
+
+This is a port of [Sindre Sorhus](https://github.com/sindresorhus) JavaScript's [yn](https://github.com/sindresorhus/yn)
+. I'm a big fan of his work!
+
 ## Code of Conduct
 
 Everyone interacting in the Yn project’s codebases, issue trackers, chat rooms and mailing lists
