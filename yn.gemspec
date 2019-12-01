@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'yn'
   spec.version       = Yn::VERSION
   spec.authors       = ['Wilson Silva']
-  spec.email         = ['wilson.dsigns@gmail.com']
+  spec.email         = ['me@wilsonsilva.net']
 
   spec.summary       = 'Parse yes/no like values.'
   spec.description   = 'Parse yes/no like values. Port of https://github.com/sindresorhus/yn.'
