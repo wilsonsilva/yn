@@ -122,8 +122,8 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Credits
 
-This is a port of [Sindre Sorhus](https://github.com/sindresorhus) JavaScript's [yn](https://github.com/sindresorhus/yn)
-. I'm a big fan of his work!
+This is a port of [Sindre Sorhus](https://github.com/sindresorhus) JavaScript's [yn](https://github.com/sindresorhus/yn).
+I'm a big fan of his work!
 
 ## Code of Conduct
 
