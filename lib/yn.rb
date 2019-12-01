@@ -1,4 +1,4 @@
-require "yn/version"
+require 'yn/version'
 
 # Encapsulates all the code of the gem in a meaningful namespace.
 module Yn
