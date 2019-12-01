@@ -1,6 +1,4 @@
 require 'bundler/setup'
-require 'pry'
-require 'yn'
 require 'simplecov'
 require 'simplecov-console'
 
@@ -12,6 +10,9 @@ unless ENV['COVERAGE'] == 'false'
     coverage_dir Dir.pwd + '/coverage'
   end
 end
+
+require 'pry'
+require 'yn'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
