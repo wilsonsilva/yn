@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/yn.svg)](https://badge.fury.io/rb/yn)
 [![Build Status](https://travis-ci.org/wilsonsilva/yn.svg?branch=master)](https://travis-ci.org/wilsonsilva/yn)
+[![Maintainability](https://api.codeclimate.com/v1/badges/96e1447d3ad45f1ca681/maintainability)](https://codeclimate.com/github/wilsonsilva/yn/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/96e1447d3ad45f1ca681/test_coverage)](https://codeclimate.com/github/wilsonsilva/yn/test_coverage)
 [![Security](https://hakiri.io/github/wilsonsilva/yn/master.svg)](https://hakiri.io/github/wilsonsilva/yn/master)
 [![Inline docs](http://inch-ci.org/github/wilsonsilva/yn.svg?branch=master)](http://inch-ci.org/github/wilsonsilva/yn)
 
