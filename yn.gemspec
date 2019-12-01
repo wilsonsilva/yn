@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/wilsonsilva/yn'
   spec.license       = "MIT"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = 'https://github.com/wilsonsilva/yn'
   spec.metadata["changelog_uri"] = 'https://github.com/wilsonsilva/yn/blob/master/CHANGELOG.md'
