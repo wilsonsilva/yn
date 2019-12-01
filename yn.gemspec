@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'sorbet-runtime'
+
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'bundler-audit', '~> 0.6'
   spec.add_development_dependency 'guard', '~> 2.16'
@@ -45,6 +47,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-rspec', '~> 1.37'
   spec.add_development_dependency 'simplecov', '~> 0.17'
   spec.add_development_dependency 'simplecov-console', '~> 0.6'
+  spec.add_development_dependency 'sorbet'
   spec.add_development_dependency 'yard', '~> 0.9'
   spec.add_development_dependency 'yard-junk', '~> 0.0.7'
   spec.add_development_dependency 'yardstick', '~> 0.9'

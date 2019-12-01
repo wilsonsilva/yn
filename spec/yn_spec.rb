@@ -1,3 +1,4 @@
+# typed: false
 RSpec.describe Yn do
   it 'has a version number' do
     expect(Yn::VERSION).not_to be nil
@@ -116,8 +117,8 @@ RSpec.describe Yn do
 
     it 'raises an error if the default is not not a boolean or nil' do
       expect { described_class.parse('10', default: 10) }.to raise_error(
-        ArgumentError,
-        "Expected the 'default' option to be nil or a boolean, got Integer"
+        TypeError,
+        /Parameter 'default': Expected type T.nilable\(T::Boolean\), got type Integer with value 10/
       )
     end
 

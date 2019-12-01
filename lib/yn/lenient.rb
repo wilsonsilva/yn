@@ -1,3 +1,4 @@
+# typed: ignore
 # Encapsulates all the code of the gem in a meaningful namespace.
 module Yn
   # Gracefully handles typos in the words +yes+ or +no+.

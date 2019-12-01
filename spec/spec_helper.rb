@@ -1,3 +1,4 @@
+# typed: false
 require 'bundler/setup'
 require 'simplecov'
 require 'simplecov-console'

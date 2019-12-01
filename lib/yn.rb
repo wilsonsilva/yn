@@ -1,8 +1,12 @@
+# typed: strict
+require 'sorbet-runtime'
 require 'yn/version'
 require 'yn/lenient'
 
 # Encapsulates all the code of the gem in a meaningful namespace.
 module Yn
+  extend T::Sig
+
   # Parses yes/no like values
   #
   # @example Parsing yes-like values
@@ -49,12 +53,9 @@ module Yn
   #
   # @api public
   #
+  sig { params(input: Object, lenient: T::Boolean, default: T.nilable(T::Boolean)).returns(T.nilable(T::Boolean)) }
   def self.parse(input, lenient: false, default: nil)
     input = input.to_s.strip
-
-    unless [NilClass, TrueClass, FalseClass].include?(default.class)
-      raise ArgumentError, "Expected the 'default' option to be nil or a boolean, got #{default.class}"
-    end
 
     return true if /^(?:y|yes|true|1|on)$/i.match?(input)
     return false if /^(?:n|no|false|0|off)$/i.match?(input)
