@@ -1,6 +1,6 @@
 # Encapsulates all the code of the gem in a meaningful namespace.
 module Yn
-  # Allows very small typos in the inputs.
+  # Gracefully handles typos in the words +yes+ or +no+.
   class Lenient
     YES_MATCH_SCORE_THRESHOLD = 2
     NO_MATCH_SCORE_THRESHOLD = 1.25
@@ -60,6 +60,16 @@ module Yn
       ['l', 0.25]
     ].to_h
 
+    # Returns +true+ or +false+ if input resembles the words +yes+ or +no+ respectively,
+    # or the given +default+ otherwise
+    #
+    # @param [String] input The string to compare with the words +yes+ or +no+
+    # @param [Object] default Value returned when the +input+ doesn't resemble the words +yes+ or +no+
+    #
+    # @return [Object]
+    #
+    # @api private
+    #
     def call(input, default)
       return true if get_yes_match_score(input) >= YES_MATCH_SCORE_THRESHOLD
       return false if get_no_match_score(input) >= NO_MATCH_SCORE_THRESHOLD
@@ -69,6 +79,14 @@ module Yn
 
     private
 
+    # Returns a match score with word +yes+ between 0 and 3
+    #
+    # @param [String] input The string to compare with the word +yes+
+    #
+    # @return [Fixnum|Float]
+    #
+    # @api private
+    #
     def get_yes_match_score(input)
       y, e, s = input.split('')
 
@@ -79,6 +97,14 @@ module Yn
       score
     end
 
+    # Returns a match score with word +no+ between 0 and 2
+    #
+    # @param [String] input The string to compare with the word +no+
+    #
+    # @return [Fixnum|Float]
+    #
+    # @api private
+    #
     def get_no_match_score(input)
       n, o = input.split('')
 
