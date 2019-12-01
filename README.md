@@ -3,6 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/yn.svg)](https://badge.fury.io/rb/yn)
 [![Build Status](https://travis-ci.org/wilsonsilva/yn.svg?branch=master)](https://travis-ci.org/wilsonsilva/yn)
 [![Security](https://hakiri.io/github/wilsonsilva/yn/master.svg)](https://hakiri.io/github/wilsonsilva/yn/master)
+[![Inline docs](http://inch-ci.org/github/wilsonsilva/yn.svg?branch=master)](http://inch-ci.org/github/wilsonsilva/yn)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yn`. To experiment with that code, run `bin/console` for an interactive prompt.
 
