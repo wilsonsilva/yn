@@ -1,4 +1,5 @@
 require 'bundler/setup'
+require 'pry'
 require 'yn'
 
 RSpec.configure do |config|
